@@ -1,5 +1,5 @@
 # Book library manager
-Manage persons and their books. Java Spring MVC project with JdbcTemplate and Thymeleaf templates as viewresolver, user input validation, Spring configuration by Java code.
+Manage persons and their books. Java Spring MVC project with JdbcTemplate DAO and Thymeleaf templates as viewresolver, user input validation + additional validation in database, Spring configuration by Java code.
 <br/>
 <br/>
 People list:<br/>
@@ -16,6 +16,9 @@ New person:<br/>
 <br/>
 Person validate example:<br/>
 ![9 person validate](https://github.com/DmitryChelogaev/booklibrary/assets/91143076/6cfeb844-98f2-42bd-afbe-50cbe89b2c62)
+<br/>
+Additional validation in the database:</br>
+![additional validate in db](https://github.com/DmitryChelogaev/booklibrary/assets/91143076/0372e41b-3d38-444a-a0a2-8eea79cb1561)
 <br/>
 Book list:<br/>
 ![5 books](https://github.com/DmitryChelogaev/booklibrary/assets/91143076/78e8484c-2265-4905-ad42-41233f0f05ab)
