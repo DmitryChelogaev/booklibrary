@@ -1,5 +1,5 @@
 # Book library manager
-Manage persons and their books. Java Spring MVC project with JdbcTemplate DAO and Thymeleaf templates as viewresolver, user input validation + additional validation in database, Spring configuration by Java code.
+Manage persons and their books. Java Spring MVC project with JdbcTemplate DAO and Thymeleaf templates as viewresolver, user input validation + additional validation in database, Spring configuration by Java code. Software versions: Java 8, Spring 5, Thymeleaf 3, PostgreSQL 11.
 <br/>
 <br/>
 People list:<br/>
