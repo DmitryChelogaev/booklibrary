@@ -6,6 +6,8 @@ import org.springframework.validation.Validator;
 import ru.chelogaev.dm.booklibrary.dao.BookDAO;
 import ru.chelogaev.dm.booklibrary.models.Book;
 
+import java.time.LocalDate;
+
 @Component
 public class BookValidator implements Validator {
     private BookDAO bookDAO;
@@ -30,6 +32,10 @@ public class BookValidator implements Validator {
             year = Integer.parseInt(book.getYear());
             if (year<1500) {
                 errors.rejectValue("year", "", "The year value should not be less than 1500");
+            }
+            LocalDate today = LocalDate.now();
+            if (year > today.getYear()) {
+                errors.rejectValue("birthYear", "", "The year value cannot be more than the current year!");
             }
         } catch (IllegalArgumentException ex) {
             errors.rejectValue("year","","The value of the year must be numerical");

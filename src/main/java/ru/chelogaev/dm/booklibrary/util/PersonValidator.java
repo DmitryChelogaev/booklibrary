@@ -7,6 +7,8 @@ import org.springframework.validation.Validator;
 import ru.chelogaev.dm.booklibrary.dao.PersonDAO;
 import ru.chelogaev.dm.booklibrary.models.Person;
 
+import java.time.LocalDate;
+
 @Component
 public class PersonValidator implements Validator {
 
@@ -30,11 +32,14 @@ public class PersonValidator implements Validator {
             try {
                 year = Integer.parseInt(age);
             } catch (IllegalArgumentException ex) {
-                //throw new NumberFormatException("Год рождения не число!");
                 errors.rejectValue("birthYear", "", "The year of birth should be a number!");
             } finally {
                 if (year < 1900) {
                     errors.rejectValue("birthYear", "", "The year of birth should not be earlier than 1900!");
+                }
+                LocalDate today = LocalDate.now();
+                if (year > today.getYear()) {
+                    errors.rejectValue("birthYear", "", "The year of birth cannot be more than the current year!");
                 }
             }
         }

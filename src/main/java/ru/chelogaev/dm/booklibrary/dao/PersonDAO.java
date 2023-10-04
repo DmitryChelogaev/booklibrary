@@ -26,8 +26,7 @@ public class PersonDAO {
     }
 
     public Optional<Person> getByEmail(String email, int id) {
-    return jdbcTemplate.query("select * from Person where email like ? and email !=null and id!=?", new Object[]{email, id}, new BeanPropertyRowMapper<>(Person.class))
-            .stream().findAny();
+        return jdbcTemplate.query("select * from Person where email like ? and email is not null and id!=?", new Object[]{email, id}, new BeanPropertyRowMapper<>(Person.class)).stream().findAny();
     }
 
     public void save(Person person) {
