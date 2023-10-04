@@ -44,7 +44,7 @@ public class PersonValidator implements Validator {
             }
         }
         if (personDAO.getByEmail(person.getEmail(), person.getId()).isPresent()) {
-            errors.rejectValue("email", "", "The e-mail must be unique!");
+            errors.rejectValue("email", "", "E-mail must be unique!");
         }
 
         if (personDAO.getByFio(person.getFio(),  person.getId()).isPresent()) {
