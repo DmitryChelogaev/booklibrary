@@ -18,7 +18,7 @@ Person validate example:<br/>
 ![9 person validate](https://github.com/DmitryChelogaev/booklibrary/assets/91143076/6cfeb844-98f2-42bd-afbe-50cbe89b2c62)
 <br/>
 Additional validation in the database:</br>
-![additional validate in db](https://github.com/DmitryChelogaev/booklibrary/assets/91143076/0372e41b-3d38-444a-a0a2-8eea79cb1561)
+![additional validate in database](https://github.com/DmitryChelogaev/booklibrary/assets/91143076/ffd4632e-a1b5-45c5-88f6-023e50fcc83f)
 <br/>
 Book list:<br/>
 ![5 books](https://github.com/DmitryChelogaev/booklibrary/assets/91143076/78e8484c-2265-4905-ad42-41233f0f05ab)
