@@ -24,7 +24,7 @@ Book list:<br/>
 ![5 books](https://github.com/DmitryChelogaev/booklibrary/assets/91143076/78e8484c-2265-4905-ad42-41233f0f05ab)
 <br/>
 Selected book:<br/>
-![6 book](https://github.com/DmitryChelogaev/booklibrary/assets/91143076/3356587f-0e8d-44e4-8463-bf425cf364e9)
+![2_book](https://github.com/DmitryChelogaev/booklibrary/assets/91143076/2a772f54-d1b4-46f3-969b-d9bdbfaca4aa)
 <br/>
 Book edit:<br/>
 ![7 book edit](https://github.com/DmitryChelogaev/booklibrary/assets/91143076/da6f0b01-53a6-4b27-a7b7-793cd7d5a259)
